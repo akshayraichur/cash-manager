@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Manager</title>
+
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>"
+      type="image/x-icon"
+    />
+
+    <meta
+      name="description"
+      content="Cash Manager - An app that helps you calculate the remaining amount to be given while making a transaction"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="heading">Cash Register App</h1>
+      <p class="description">
+        Enter the bill amount and cash given by the customer and know the
+        minimum number of notes to return
+      </p>
+      <div class="input-container">
+        <label for="bill-amount">Bill Amount</label>
+        <input
+          id="bill-amount"
+          type="text"
+          placeholder="Enter the bill amount.."
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="cash">Cash Given</label>
+        <input type="text" id="cash" placeholder="Cash given from customer.." />
+      </div>
+
+      <div class="input-container">
+        <button id="check-btn">Check</button>
+        <p class="error-message"></p>
+      </div>
+
+      <div class="table-container">
+        <table border="">
+          <caption>
+            Return Change
+          </caption>
+
+          <tbody>
+            <tr>
+              <th>No of Notes</th>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+            </tr>
+            <tr>
+              <th>Notes</th>
+              <td>2000</td>
+              <td>500</td>
+              <td>200</td>
+              <td>100</td>
+              <td>50</td>
+              <td>20</td>
+              <td>10</td>
+              <td>5</td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

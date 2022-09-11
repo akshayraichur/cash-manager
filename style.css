@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #006e7f;
+  --text-color: azure;
+  --heading-color: #f8cb2e;
+  --secondary-color: #ee5007;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1rem 2rem;
+  margin: auto;
+  max-width: 900px;
+}
+
+.heading {
+  color: var(--heading-color);
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.description {
+  text-align: justify;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.secondary {
+  display: none;
+}
+
+.input-container button {
+  width: 30%;
+  margin: auto;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+input[type='text'] {
+  border: 2px solid var(--secondary-color);
+  width: 50%;
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+  transition: 0.5s;
+  --webkit-transition: 0.5s;
+  outline: none;
+  margin: 0.5rem auto;
+  font-size: 1rem;
+}
+
+input[type='text']:focus {
+  border: 2px dashed var(--secondary-color);
+}
+
+input[type='text']::placeholder {
+  opacity: 0.4;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--secondary-color);
+}
+
+.error-message {
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.table-container {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border: 1px solid var(--secondary-color);
+  border-collapse: collapse;
+}
+
+table caption {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+th,
+td {
+  padding: 1rem 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  input[type='text'] {
+    width: 100%;
+    padding: 0.7rem 0;
+  }
+}
