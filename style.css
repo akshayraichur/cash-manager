@@ -119,4 +119,14 @@ td {
     width: 100%;
     padding: 0.7rem 0;
   }
+
+  .input-container button {
+    width: 80%;
+  }
+
+  th,
+  td {
+    padding: 0.2rem;
+    font-size: 0.5rem;
+  }
 }
